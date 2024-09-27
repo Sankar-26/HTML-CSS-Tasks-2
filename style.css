@@ -1,0 +1,57 @@
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+} 
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+
+.custom-height {
+  height: 85vh; /* Sets the height to 85% of the viewport height */
+}
+
+.border-end {
+  border-right: 1px dotted whitesmoke; /* Vertical dotted line */
+  height: 100%; /* Extend the line full height */
+}
+
+
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center; 
+  margin: 20px 0;
+  margin-bottom: 1rem;
+}
+
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider::before {
+  margin-right: 10px;
+}
+
+.divider::after {
+  margin-left: 10px;
+}
+
+.divider .icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.divider .icon-text i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
